@@ -1,7 +1,7 @@
 /*
 CREATE TABLE `users` (
 	`id` tinyint(4) NOT NULL AUTO_INCREMENT,
-	`username` varchar(10) NOT NULL,
+	`username` varchar(60) NOT NULL,
 	`password` varchar(100) NOT NULL,
 	`permiso` int (1) NOT NULL,
 PRIMARY KEY (`id`)

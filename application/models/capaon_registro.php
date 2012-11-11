@@ -16,10 +16,11 @@ class Capaon_registro extends CI_Model {
 		);
         $success = $this->db->insert('empresa',$login_db);    	
         
+        $_POST['permiso'] = 1;
         $login_db2 = array(
             'username' => $this ->input->post('correo'),
             'password' => $this ->input->post('password'),
-            'permiso'  => $this ->input->post('1'),
+            'permiso'  => $this ->input->post('permiso'),
         );
         $success1 = $this->db->insert('users',$login_db2);
     	return $success;
@@ -38,13 +39,13 @@ class Capaon_registro extends CI_Model {
             'celular' => $this->input->post('celular'),
             'correo' => $this->input->post('correo'),  
         );
-        $success = $this->db->insert('natural',$login_db3);
-        return $success;
+        $success = $this->db->insert('natural',$login_db3);        
         
+        $_POST['permiso'] = 2;
         $login_db4 = array(
             'username' => $this ->input->post('correo'),
             'password' => $this ->input->post('password'),
-            'permiso'  => $this ->input->post('2'),
+            'permiso'  => $this ->input->post('permiso'),
         );
         $success1 = $this->db->insert('users',$login_db4);
         return $success1;
@@ -53,6 +54,7 @@ class Capaon_registro extends CI_Model {
 	}
 
 }
+
 
  
 /* End of file capaon_registro.php */

@@ -16,7 +16,7 @@ class SigninEmpresa extends CI_Controller {
 		$this->form_validation->set_rules('telefonoFax', 'telefono fax', 'trim|numeric|required|min_length[4]|max_length[20]|xss_clean');
 		$this->form_validation->set_rules('direccion', 'direccion', 'trim|alpha_numeric|required|min_length[4]|max_length[80]|xss_clean');
 		$this->form_validation->set_rules('correo', 'correo', 'trim|valid_email|required|min_length[4]|max_length[60]|xss_clean');
-		$this->form_validation->set_rules('password', 'contraseña', 'trim|required|alpha_numeric|min_length[6]|max_length[12]|matches[passwordC]|xss_clean');
+		$this->form_validation->set_rules('password', 'contraseña', 'trim|required|alpha_numeric|min_length[6]|max_length[12]|matches[passwordC]|xss_clean|md5');
 
 		$this->form_validation->set_error_delimiters('</br></br><div style="width:225px; color:red;" class="alert alert-error">', '</div>');
 		if ($this->form_validation->run() == False) {
