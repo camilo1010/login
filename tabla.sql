@@ -1,6 +1,6 @@
 /*
 CREATE TABLE `users` (
-	`id` tinyint(4) NOT NULL AUTO_INCREMENT,
+	`id` int(4) NOT NULL AUTO_INCREMENT,
 	`username` varchar(60) NOT NULL,
 	`password` varchar(100) NOT NULL,
 	`permiso` int (1) NOT NULL,
@@ -10,7 +10,7 @@ PRIMARY KEY (`id`)
 
 CREATE TABLE `empresa`(
 	`RazonSocial` varchar(70) NOT NULL,
-	`nit` varchar(20),
+	`nit` varchar(20) NOT NULL,
 	`RepLegal` varchar(50) NOT NULL,
 	`Actividad` varchar(100) NOT NULL,
 	`pais` varchar(30) NOT NULL,
