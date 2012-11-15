@@ -11,7 +11,7 @@
 		</div>
 		<div>
 			<label>Estado</label>
-			<input type="text" name="estado" value="Abierto">
+			<input type="text" name="estado" value="Abierto" readonly="true">				
 			<?php echo form_error(''); ?>
 		</div>
 		<div>
@@ -46,7 +46,8 @@
 		</div>		
 		<div>
 			<label>Descripcion Basica</label>
-			<input type="text" name="descBasica" value="<?php echo set_value('descBasica'); ?>">
+			<br/>
+			<textarea name="descBasica" cols="30" rows="10" value="<?php echo set_value('descBasica'); ?>"></textarea>			
 			<?php echo form_error('descBasica'); ?>
 		</div>
 		<div>

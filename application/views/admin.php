@@ -6,7 +6,11 @@
   <body>
     <h1>Home</h1>
     <h2>Welcome <?php echo $username." ".$permiso; ?>!</h2>
+    <br />
     <a href="<?php echo base_url(); ?>index.php/CrearCurso">Crear Curso</a>
+    <br />
+    <a href="">administrar la informacion de la empresa</a>
+    <br />
     <a href="home/logout">Logout</a>
   </body>
 </html>

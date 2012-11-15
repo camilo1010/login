@@ -52,7 +52,23 @@ CREATE TABLE `curso`(
 	`descDetallada` mediumtext NOT NULL,
 	`numConsignacion` varchar(50) NOT NULL,
 	PRIMARY KEY(`id`)
-)AUTO_INCREMENT=1;
+)AUTO_INCREMENT=1;*/
+
+CREATE TABLE `capaon`(
+	`id` int(10) NOT NULL,
+	`mision` mediumtext NOT NULL,
+	`vision` mediumtext NOT NULL,
+	`quieneSomos` mediumtext NOT NULL,
+	PRIMARY KEY(`id`)
+);
+
+CREATE TABLE `contactenos`(
+	`id` int(10) NOT NULL,
+	`nombre` varchar(80) NOT NULL,
+	`correo` varchar(60) NOT NULL,
+	`mesaje` mediumtext,
+	PRIMARY KEY(`id`)
+);
 /*
 CREATE TABLE ``(
 	``
