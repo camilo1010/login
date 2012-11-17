@@ -1,4 +1,4 @@
-/*
+
 CREATE TABLE `users` (
 	`id` int(4) NOT NULL AUTO_INCREMENT,
 	`username` varchar(60) NOT NULL,
@@ -6,7 +6,7 @@ CREATE TABLE `users` (
 	`permiso` int (1) NOT NULL,
 PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
-*/
+
 
 CREATE TABLE `empresa`(
 	`RazonSocial` varchar(70) NOT NULL,
@@ -35,7 +35,8 @@ CREATE TABLE `natural`(
 	`tipo` varchar(15) NOT NULL,
 	PRIMARY KEY(`cedula`)
 );
-/*
+
+
 CREATE TABLE `curso`(
 	`id` int(7) NOT NULL,
 	`nombre` varchar(120) NOT NULL,
@@ -48,11 +49,13 @@ CREATE TABLE `curso`(
 	`fechaFinCurso`	 date NOT NULL,
 	`cantInscritos` varchar(2) NOT NULL,
 	`cantMatriculados` varchar(2) NOT NULL,
-	`descBasica` varchar(150) NOT NULL,
-	`descDetallada` mediumtext NOT NULL,
+	`descBasica` varchar(150) NOT NULL,	
+	`objetivo` varchar(140) NOT NULL,
+	`justificacion` varchar(200) NOT NULL,
+	`facilitadores` mediumtext, 
 	`numConsignacion` varchar(50) NOT NULL,
 	PRIMARY KEY(`id`)
-)AUTO_INCREMENT=1;*/
+)AUTO_INCREMENT=1;
 
 CREATE TABLE `capaon`(
 	`id` int(10) NOT NULL,

@@ -1,5 +1,6 @@
 <html>
 <head>
+	<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
 	<title></title>
 </head>
 <body>
@@ -24,7 +25,7 @@
 		<br/>
 		<div>
 			<label>Fecha de Nacimiento</label>
-			<input type ="text" name="fechaNac" value="<?php echo set_value('fechaNac'); ?>">
+			<input type ="date" name="fechaNac" value="<?php echo set_value('fechaNac'); ?>">
 			<?php echo form_error('fechaNac'); ?>
 		</div>
 		<br/>
