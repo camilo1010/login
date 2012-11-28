@@ -12,7 +12,11 @@
     <br />
     <a href="<?php echo base_url(); ?>index.php/listCursos">Listado de cursos</a>
     <br />
+    <a href="<?php echo base_url(); ?>index.php/listClientesP">Listado de clientes potenciales</a>
+    <br />
     <a href="<?php echo base_url(); ?>index.php/editinfoempresa">Administrar la informacion de la empresa</a>
+    <br />
+    <a href="<?php echo base_url(); ?>index.php/GenerarReporte">Generar reportes</a>
     <br />
     <a href="home/logout">Logout</a>
   </body>

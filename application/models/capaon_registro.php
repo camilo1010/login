@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+|<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Capaon_registro extends CI_Model {
 

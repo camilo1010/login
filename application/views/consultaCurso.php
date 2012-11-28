@@ -13,12 +13,25 @@
 			</tr>
 		</thead>
 		<tbody>
+			<?php
+			
+                if (isset($consulta)) {
+                    foreach ($consulta as $key) {
+            ?>
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td><?php echo $key->cedula ?></td>
+				<td><?php echo $key->nombre ?></td>
+				<td><?php echo $key->correo ?></td>
+				<td><?php echo $key->telefono ?></td>
 			</tr>
+			<?php
+                	}
+                }else{
+                echo "<br>";
+                echo "<br>";
+                echo "No se han encontrado Registros";
+           		}
+                ?>
 		</tbody>
 	</table>
 </body>

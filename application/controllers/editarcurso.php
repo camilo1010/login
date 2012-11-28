@@ -27,10 +27,10 @@ class editarcurso extends CI_Controller {
 		$datos['id'] = $_POST['id'];
 		$Estado = $this->input->post('Estado');
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('descBasica', 'descripcion basica ', 'trim|alpha|required|min_length[30]|max_length[150]|xss_clean');
-		$this->form_validation->set_rules('objetivo', 'objetivo ', 'trim|alpha|required|min_length[30]|max_length[140]|xss_clean');
-		$this->form_validation->set_rules('justificacion', 'justificacion ', 'trim|alpha|required|min_length[30]|max_length[200]|xss_clean');
-		$this->form_validation->set_rules('facilitadores', 'facilitadores ', 'trim|alpha|required|min_length[10]|max_length[500]|xss_clean');
+		$this->form_validation->set_rules('descBasica', 'descripcion basica ', 'required|min_length[30]|max_length[500]');
+		$this->form_validation->set_rules('objetivo', 'objetivo ', 'required|min_length[30]|max_length[500]');
+		$this->form_validation->set_rules('justificacion', 'justificacion ', 'required|min_length[30]|max_length[500]');
+		$this->form_validation->set_rules('facilitadores', 'facilitadores ', 'required|min_length[10]|max_length[500]');
 		$this->form_validation->set_error_delimiters('</br></br><div style="width:225px; color:red;" class="alert alert-error">', '</div>');
 		$datos += $_POST;
 

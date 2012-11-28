@@ -1098,7 +1098,7 @@ class CI_Form_validation {
 	 */
 	public function alpha($str)
 	{
-		return ( ! preg_match("/^([a-z|ñ|,|.|0-9 ])+$/i", $str)) ? FALSE : TRUE;
+		return ( ! preg_match("/^([a-z|ñ|,|.|0-9| ])+$/i", $str)) ? FALSE : TRUE;
 	}
 
 	// --------------------------------------------------------------------

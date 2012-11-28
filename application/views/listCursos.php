@@ -30,13 +30,17 @@
 									<input type="submit" name="boton" value="Consulta">
 								</form>
 								<label><?php echo $curso->estado ?></label>								
-								<form action="<?php echo base_url(); ?>index.php/editarcurso" method="post">
+								<form action="<?php echo base_url(); ?>index.php/eliminarCurso" method="post">
 									<input type="hidden" name="id" value="<?php echo $curso->id; ?>"/>
 									<input type="submit" name="boton" value="Eliminar">
 								</form>
-								<form action="<?php echo base_url(); ?>index.php/editarcurso" method="post">
+								<form action="<?php echo base_url(); ?>index.php/reporteMatxCurso" method="post">
 									<input type="hidden" name="id" value="<?php echo $curso->id; ?>"/>
 									<input type="submit" name="boton" value="Reporte">
+								</form>
+								<form action="<?php echo base_url(); ?>index.php/reporteDetallado" method="post">
+									<input type="hidden" name="id" value="<?php echo $curso->id; ?>"/>
+									<input type="submit" name="boton" value="Reporte detallado">
 								</form>
 							</td>
 						</tr>

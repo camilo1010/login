@@ -48,7 +48,7 @@
 		<div>
 			<label>Descripcion Basica</label>
 			<br/>
-			<textarea name="descBasica" cols="30" rows="10" value="<?php echo set_value('descBasica'); ?>"></textarea>
+			<textarea name="descBasica" cols="30" rows="10"><?php echo set_value('descBasica'); ?></textarea>
 			<?php echo form_error('descBasica'); ?>
 		</div>
 		<label>Descripcion detallada</label>
@@ -65,7 +65,7 @@
 		<div>
 			<label>Facilitadores</label>
 			<br>
-			<textarea name="facilitadores" cols="30" rows="10" value="<?php echo set_value('facilitadores'); ?>"></textarea>
+			<textarea name="facilitadores" cols="30" rows="10"><?php echo set_value('facilitadores'); ?></textarea>
 			<?php echo form_error('facilitadores'); ?>
 		</div>
 		<input type="submit" name="boton" value="Aceptar">
